@@ -33,7 +33,7 @@ recognition.continuous = true;
 recognition.interimResults = true;
 recognition.addEventListener("result", onResult);
 
-const foo = () => {
+const toggleListening = () => {
     listening ? stop() : start();
     listening = !listening;
 };
